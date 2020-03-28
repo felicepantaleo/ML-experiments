@@ -3,8 +3,9 @@ import torch
 from torch.utils import data
 from PIL import Image
 from torchvision import transforms
+from pycocotools.coco import COCO
 
-class simpleDataset(data.Dataset):
+class SimpleDataset(data.Dataset):
     
     # initialise function of class
     def __init__(self, root, filenames, labels):
